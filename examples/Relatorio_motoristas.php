@@ -95,13 +95,13 @@
                 <div class="card-body">
                   <table class="table">
                     <thead class=" text-primary">                     
-                      <th scope="col">license_name</th>
-                      <th scope="col">license_id</th>
-                      <th scope="col">name_busdriver</th>
-                      <th scope="col">phone_busdriver</th>
-                      <th scope="col">valid</th>
-                      <th scope="col">entity</th>
-                      <th scope="col">value_pay</th>                                   
+                      <th scope="col">Nome licença</th>
+                      <th scope="col">Id</th>
+                      <th scope="col">Condutor</th>
+                      <th scope="col">Telemóvel</th>
+                      <th scope="col">Validade</th>
+                      <th scope="col">Entidade</th>
+                      <th scope="col">Valor a pagar</th>                                      
                     </thead>
  
                     <tbody>
@@ -140,13 +140,13 @@
                 <div class="card-body">
                   <table class="table">
                     <thead class=" text-primary">                     
-                      <th scope="col">license_name</th>
-                      <th scope="col">license_id</th>
-                      <th scope="col">name_busdriver</th>
-                      <th scope="col">phone_busdriver</th>
-                      <th scope="col">valid</th>
-                      <th scope="col">entity</th>
-                      <th scope="col">value_pay</th>                                   
+                      <th scope="col">Nome licença</th>
+                      <th scope="col">Id</th>
+                      <th scope="col">Condutor</th>
+                      <th scope="col">Telemóvel</th>
+                      <th scope="col">Validade</th>
+                      <th scope="col">Entidade</th>
+                      <th scope="col">Valor a pagar</th>                                   
                     </thead>
  
                     <tbody>

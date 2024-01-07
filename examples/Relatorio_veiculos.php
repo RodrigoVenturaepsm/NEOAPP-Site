@@ -105,13 +105,13 @@
                 <div class="card-body">
                   <table class="table">
                     <thead class=" text-primary">                     
-                      <th scope="col">certificate_name</th>
-                      <th scope="col">certificate_id</th>
-                      <th scope="col">vehicle_id</th>
-                      <th scope="col">plate_vehicle</th>
-                      <th scope="col">valid</th>
-                      <th scope="col">entity</th>
-                      <th scope="col">value_pay</th>                                   
+                      <th scope="col">Nome do certificado</th>
+                      <th scope="col">Id do certificado</th>
+                      <th scope="col">Id do Veículo</th>
+                      <th scope="col">Matricula</th>
+                      <th scope="col">Validade</th>
+                      <th scope="col">Entidade</th>
+                      <th scope="col">Valor a pagar</th>                                   
                     </thead>
                                               
                     <tbody>
@@ -150,13 +150,13 @@
                 <div class="card-body">
                   <table class="table">
                     <thead class=" text-primary">
-                      <th scope="col">certificate_name</th>
-                      <th scope="col">certificate_id</th>
-                      <th scope="col">vehicle_id</th>
-                      <th scope="col">plate_vehicle</th>
-                      <th scope="col">valid</th>
-                      <th scope="col">entity</th>
-                      <th scope="col">value_pay</th>                   
+                      <th scope="col">Nome do certificado</th>
+                      <th scope="col">Id do certificado</th>
+                      <th scope="col">Id do Veículo</th>
+                      <th scope="col">Matricula</th>
+                      <th scope="col">Validade</th>
+                      <th scope="col">Entidade</th>
+                      <th scope="col">Valor a pagar</th>                  
                     </thead>
                                       
                     <tbody>
