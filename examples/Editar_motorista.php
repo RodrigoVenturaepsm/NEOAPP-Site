@@ -45,7 +45,7 @@ if (isset($_GET['id'])) {
   <div class="wrapper ">
     <div class="sidebar" data-color="green">
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        <a class="simple-text logo-normal">
           NEOapp
         </a>
       </div>

@@ -24,7 +24,7 @@
   <div class="wrapper ">
     <div class="sidebar" data-color="green">
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        <a class="simple-text logo-normal">
           NEOapp
         </a>
       </div>
@@ -96,14 +96,14 @@
                     <h4 class="card-title">Criar motorista</h4>
                 </div>
                 <div class="card-body">
-                <form action="processar_criacao_motorista.php" method="POST">
+                <form action="processar_criacao_motorista.php" method="POST" id="formCriarMotorista" onsubmit="return confirmarCriacao()">
                         <!-- Campos para criação -->
                         <div class="form-group">
                             <label for="phone">Telemóvel</label>
                             <input type="text" class="form-control" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="name">Nome</label>
+                            <label for="name">Pimeiro e último nome</label>
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="form-group">
@@ -116,7 +116,7 @@
                         </div>
                         <!-- Adicione outros campos conforme necessário -->
 
-                        <button type="submit" class="btn btn-success" onclick="return confirmarCriacao()">Salvar</button>
+                        <button type="submit" class="btn btn-success">Salvar</button>
 
                         <!-- Botão de Cancelar -->
                         <a href="Lista_motoristas.php" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja cancelar? Todas as alterações não salvas serão perdidas.');">Cancelar</a>

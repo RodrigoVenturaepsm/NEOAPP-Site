@@ -24,7 +24,7 @@
     <div class="wrapper ">
       <div class="sidebar" data-color="green">
         <div class="logo">
-          <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          <a class="simple-text logo-normal">
             NEOapp
           </a>
         </div>
@@ -116,7 +116,7 @@
                                               
                     <tbody>
                       <?php
-                        include "ligaProcedure_mes_corrente.php";
+                        include "LigacaoProcedures/ligaProcedure_mes_corrente.php";
                         $resultados1 = $result->fetch_all(MYSQLI_ASSOC);
 
                         foreach ($resultados1 as $row1) {
@@ -161,7 +161,7 @@
                                       
                     <tbody>
                       <?php
-                        include "ligaProcedure_proximo_mes.php";
+                        include "LigacaoProcedures/ligaProcedure_proximo_mes.php";
                         $resultados2 = $result->fetch_all(MYSQLI_ASSOC);
 
                         foreach ($resultados2 as $row2) {

@@ -106,7 +106,7 @@
  
                     <tbody>
                       <?php
-                        include "ligaProcedure_licencaInvalida_mesCorrente.php";
+                        include "LigacaoProcedures/ligaProcedure_licencaInvalida_mesCorrente.php";
                         $resultados1 = $result->fetch_all(MYSQLI_ASSOC);
 
                         foreach ($resultados1 as $row1) {
@@ -151,7 +151,7 @@
  
                     <tbody>
                       <?php
-                        include "ligaProcedure_licençaInvalida_proximoMes.php";
+                        include "LigacaoProcedures/ligaProcedure_licençaInvalida_proximoMes.php";
                         $resultados2 = $result->fetch_all(MYSQLI_ASSOC);
 
                         foreach ($resultados2 as $row2) {

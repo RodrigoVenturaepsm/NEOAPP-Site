@@ -37,7 +37,7 @@
   <div class="wrapper ">
     <div class="sidebar" data-color="green">
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        <a class="simple-text logo-normal">
           NEOapp
         </a>
       </div>
@@ -133,14 +133,14 @@
                     </thead>
                     <tbody>
                       <?php
-                        $counter = 1;
+                       
                         while ($row = mysqli_fetch_assoc($resultado)) {
                       ?>
                       
                           <tr>
-                            <th scope="row"><?php echo $counter++; ?></th>
+                            <th scope="row"><?php echo $row ['id_busdriver']; ?></th>
                             <td><?php echo $row['phone_busdriver']; ?></td>
-                            <td><input type="password" value="<?php echo $row['password_app_busdriver']; ?>" readonly></td>
+                            <td><input type="password" value="<?php echo $row['password_app_busdriver']; ?>" disabled></td>
                             <td><?php echo $row['name_busdriver']; ?></td>
                             <td><?php echo $row['email_busdriver']; ?></td>
                             <td><?php echo $row['busdriver_license_id']; ?></td>
