@@ -129,11 +129,11 @@ if (mysqli_num_rows($resultado1) > 0) {
                                                 while ($row1 = mysqli_fetch_assoc($resultado1)) {
                                                 ?>
                                                     <tr>
-                                                        <th scope="row"><?php echo $row1['vehicle_id']; ?></th>
-                                                        <td><?php echo $row1['sum_km']; ?></td>
-                                                        <td><?php echo $row1['fuel_supply']; ?></td>
-                                                        <td><?php echo $row1['adblue_supply']; ?></td>
-                                                        <td><?php echo $row1['water_supply']; ?></td>
+                                                        <th scope="row" class="text-center"><?php echo $row1['vehicle_id']; ?></th>
+                                                        <td class="text-center"><?php echo $row1['sum_km']; ?></td>
+                                                        <td class="text-center"><?php echo $row1['fuel_supply']; ?></td>
+                                                        <td class="text-center"><?php echo $row1['adblue_supply']; ?></td>
+                                                        <td class="text-center"><?php echo $row1['water_supply']; ?></td>
                                                     </tr>
                                                 <?php
                                                 }
@@ -165,13 +165,13 @@ if (mysqli_num_rows($resultado1) > 0) {
                                                 while ($row2 = mysqli_fetch_assoc($resultado2)) {
                                                 ?>
                                                     <tr>
-                                                        <th scope="row"><?php echo $row2['vehicle_id']; ?></th>
-                                                        <td><?php echo $row2['note_steering_system']; ?></td>
-                                                        <td><?php echo $row2['note_motor_system']; ?></td>
-                                                        <td><?php echo $row2['note_start_system']; ?></td>
-                                                        <td><?php echo $row2['note_transmission_system']; ?></td>
-                                                        <td><?php echo $row2['note_suspension_system']; ?></td>
-                                                        <td><?php echo $row2['note_exhaust_system']; ?></td>
+                                                        <th scope="row" class="text-center"><?php echo $row2['vehicle_id']; ?></th>
+                                                        <td class="text-center"><?php echo $row2['note_steering_system']; ?></td>
+                                                        <td class="text-center"><?php echo $row2['note_motor_system']; ?></td>
+                                                        <td class="text-center"><?php echo $row2['note_start_system']; ?></td>
+                                                        <td class="text-center"><?php echo $row2['note_transmission_system']; ?></td>
+                                                        <td class="text-center"><?php echo $row2['note_suspension_system']; ?></td>
+                                                        <td class="text-center"><?php echo $row2['note_exhaust_system']; ?></td>
                                                     </tr>
                                                 <?php
                                                 }

@@ -2,6 +2,17 @@
 include "ligaBD.php";
 $liga = liga1();
 
+// Consulta SQL para obter os e-mails da base de dados
+$sql = "SELECT email FROM sua_tabela_de_emails";
+$result = $conn->query($sql);
+
+// Exibir os e-mails em uma lista suspensa
+if ($result->num_rows > 0) {
+  while ($row = $result->fetch_assoc()) {
+    echo "<option value='" . $row["email"] . "'>" . $row["email"] . "</option>";
+  }
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize input data (preventing SQL injection)
     $phone = ($_POST['phone']);

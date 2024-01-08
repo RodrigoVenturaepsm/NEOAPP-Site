@@ -131,12 +131,12 @@
                       
                       <tr>
                         <th scope="row"><?php echo $row1['certificate_name']; ?></th>
-                        <td><?php echo $row1['certificate_id']; ?></td>
-                        <td><?php echo $row1['vehicle_id']; ?></td>
-                        <td><?php echo $row1['plate_vehicle']; ?></td>
-                        <td><?php echo $row1['valid']; ?></td>
+                        <td class="text-center"><?php echo $row1['certificate_id']; ?></td>
+                        <td class="text-center"><?php echo $row1['vehicle_id']; ?></td>
+                        <td class="text-center"><?php echo $row1['plate_vehicle']; ?></td>
+                        <td class="text-center"><?php echo $row1['valid']; ?></td>
                         <td><?php echo $row1['entity']; ?></td>
-                        <td><?php echo number_format($row1['value_pay'],2); ?> €</td>
+                        <td class="text-center"><?php echo number_format($row1['value_pay'],2); ?>€</td>
                       </tr>
                       
                       <?php
@@ -175,12 +175,12 @@
                       ?>
                       <tr>
                         <th scope="row"><?php echo $row2['certificate_name']; ?></th>
-                        <td><?php echo $row2['certificate_id']; ?></td>
-                        <td><?php echo $row2['vehicle_id']; ?></td>
-                        <td><?php echo $row2['plate_vehicle']; ?></td>
-                        <td><?php echo $row2['valid']; ?></td>
+                        <td class="text-center"><?php echo $row2['certificate_id']; ?></td>
+                        <td class="text-center"><?php echo $row2['vehicle_id']; ?></td>
+                        <td class="text-center"><?php echo $row2['plate_vehicle']; ?></td>
+                        <td class="text-center"><?php echo $row2['valid']; ?></td>
                         <td><?php echo $row2['entity']; ?></td>
-                        <td><?php echo number_format($row2['value_pay'],2); ?> €</td>
+                        <td class="text-center"><?php echo number_format($row2['value_pay'],2); ?>€</td>
                       </tr>
                       <?php
                         }

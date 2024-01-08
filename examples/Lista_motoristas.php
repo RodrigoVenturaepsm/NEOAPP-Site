@@ -124,15 +124,15 @@
                   <table class="table">
                     <thead class=" text-primary">
 
-                      <th scope="col">Nº</th>
-                      <th scope="col">Telemóvel</th>
-                      <th scope="col">Senha</th>
-                      <th scope="col">Nome</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Carta</th>
-                      <th scope="col">CAM</th>
-                      <th scope="col">Editar</th>
-                      <th scope="col">Eliminar</th>
+                      <th scope="col" class="text-center">Nº</th>
+                      <th scope="col" class="text-center">Telemóvel</th>
+                      <th scope="col" class="text-center">Senha</th>
+                      <th scope="col" class="text-center">Nome</th>
+                      <th scope="col" class="text-center">Email</th>
+                      <th scope="col" class="text-center">Carta</th>
+                      <th scope="col" class="text-center">CAM</th>
+                      <th scope="col" class="text-center">Editar</th>
+                      <th scope="col" class="text-center">Eliminar</th>
                     </thead>
                     <tbody>
                       <?php
@@ -141,19 +141,15 @@
                       ?>
                       
                           <tr>
-                            <th scope="row"><?php echo $row ['id_busdriver']; ?></th>
-                            <td><?php echo $row['phone_busdriver']; ?></td>
-                            
-
+                            <th scope="row" class="text-center"><?php echo $row ['id_busdriver']; ?></th>
+                            <td class="text-center"><?php echo $row['phone_busdriver']; ?></td>
                             <td><?php echo str_repeat('*', strlen($row['password_app_busdriver']));?></td>
-
-                            <!--<td><input type="password" value="" disabled></td>-->
-                            <td><?php echo $row['name_busdriver']; ?></td>
-                            <td><?php echo $row['email_busdriver']; ?></td>
-                            <td><?php echo $row['valid_busdriver_license']; ?></td>
-                            <td><?php echo $row['valid_busdriver_license_ability']; ?></td>
-                            <td><a href="Editar_motorista.php?id=<?php echo $row['id_busdriver']; ?>" class="btn btn-warning">Editar</a></td>
-                            <td><button type="button" class="btn btn-danger" onclick="deleteBusdriver(<?php echo $row['id_busdriver']; ?>)">Eliminar</button></td>
+                            <td class="text-center"><?php echo $row['name_busdriver']; ?></td>
+                            <td class="text-center"><?php echo $row['email_busdriver']; ?></td>
+                            <td class="text-center"><?php echo $row['valid_busdriver_license']; ?></td>
+                            <td class="text-center"><?php echo $row['valid_busdriver_license_ability']; ?></td>
+                            <td class="text-center"><a href="Editar_motorista.php?id=<?php echo $row['id_busdriver']; ?>" class="btn btn-warning">Editar</a></td>
+                            <td class="text-center"><button type="button" class="btn btn-danger" onclick="deleteBusdriver(<?php echo $row['id_busdriver']; ?>)">Eliminar</button></td>
                             
                           </tr>
                       <?php
@@ -177,6 +173,7 @@
         if (confirm("Tem certeza que deseja excluir este motorista?")) {
             // Se o usuário confirmar, chame o PHP para excluir
             window.location.href = "delete_motorista.php?id=" + busdriverId;
+
         } else {
             alert("Exclusão cancelada pelo usuário.");
         }

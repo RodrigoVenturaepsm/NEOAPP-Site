@@ -118,12 +118,12 @@
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
-                      <th scope="col">Nº</th>
-                      <th scope="col">Inspeção</th>
-                      <th scope="col">Certificado</th>
-                      <th scope="col">Licença europeia</th>
-                      <th scope="col">Licença crianças</th>
-                      <th scope="col">Tacógrafo</th>
+                      <th scope="col" class="text-center">Nº</th>
+                      <th scope="col" class="text-center">Inspeção</th>
+                      <th scope="col" class="text-center">Certificado</th>
+                      <th scope="col" class="text-center">Licença europeia</th>
+                      <th scope="col" class="text-center">Licença crianças</th>
+                      <th scope="col" class="text-center">Tacógrafo</th>
                   
                     </thead>
                     <tbody>
@@ -133,12 +133,12 @@
                         while ($row = mysqli_fetch_assoc($resultado)) {
                       ?>
                           <tr>
-                            <th scope="row"><?php echo $row['id_vehicle']; ?></th>
-                            <td><?php echo $row['valid_vehicle_inspection']; ?></td>
-                            <td><?php echo $row['valid_vehicle_certificate']; ?></td>
-                            <td><?php echo $row['valid_european_vehicle_license']; ?></td>
-                            <td><?php echo $row['valid_kid_vehicle_license']; ?></td>
-                            <td><?php echo $row['valid_tacograph_vehicle']; ?></td>
+                            <th scope="row" class="text-center"><?php echo $row['id_vehicle']; ?></th>
+                            <td class="text-center"><?php echo $row['valid_vehicle_inspection']; ?></td>
+                            <td class="text-center"><?php echo $row['valid_vehicle_certificate']; ?></td>
+                            <td class="text-center"><?php echo $row['valid_european_vehicle_license']; ?></td>
+                            <td class="text-center"><?php echo $row['valid_kid_vehicle_license']; ?></td>
+                            <td class="text-center"><?php echo $row['valid_tacograph_vehicle']; ?></td>
                   
                           </tr>
                       <?php

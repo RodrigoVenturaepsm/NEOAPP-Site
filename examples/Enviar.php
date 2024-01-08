@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +20,12 @@
   <link href="../assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
+
+  <!-- Bootstrap Select CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+
+<!-- Bootstrap Select JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 </head>
 
 <body class="">
@@ -99,7 +107,12 @@
                   <div class="col-md-4 pr-1">
                       <div class="form-group">
                       <label>Email</label>
-                      <input type="email" class="form-control" name="Email" placeholder="Email">
+                      <p></p>
+                      <select class="form-select" aria-label="Large select example">
+                        <?php
+                          include "envio.php";
+                        ?>
+                      </select>
                     </div>
                   </div>
 
@@ -197,6 +210,11 @@
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.selectpicker').selectpicker();
+  });
+</script>
 </body>
 
 </html>
