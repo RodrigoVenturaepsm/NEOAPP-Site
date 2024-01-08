@@ -33,7 +33,7 @@
           <li>
             <a href="./dashboard.php">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <p>Ocorrências</p>
             </a>
           </li>
           <li>
@@ -95,36 +95,34 @@
               </div>
               <div class="card-body"> 
                 <form method="POST" action="./envio.php"> 
-                  <div class="row">
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                      <label>Email</label>
+                      <input type="email" class="form-control" name="Email" placeholder="Email">
+                    </div>
+                  </div>
+                        
+                    
+                </div>  
+                
+                <div class="row">
                     <div class="col-md-4 pr-1">
                       <div class="form-group">
-                        <label>Primeiro Nome</label>
-                        <input type="text" class="form-control" name="primeiro_nome" placeholder="Ex.: Tiago">
+                        <label>Assunto</label>
+                        <input type="text" class="form-control" name="Assunto" placeholder="Assunto">
                       </div>
                     </div>
                         
-                    <div class="col-md-4 pl-1">
-                      <div class="form-group">
-                        <label>Último nome</label>
-                        <input type="text" class="form-control" name="segundo_nome" placeholder="Ex.: Vieira">
-                      </div>
-                    </div>
-
-
-                    <div class="col-md-4 pl-1">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Endereço de Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="Ex.: exemplo@gmail.com">
-                      </div>
-                    </div>
+                    
                   </div>
                       
                       
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Assunto</label>
-                        <textarea rows="4" cols="80" class="form-control" name="mensagem" placeholder="Escreva aqui o assunto..." ></textarea>
+                        <label>Mensagem</label>
+                        <textarea rows="4" cols="80" class="form-control" name="mensagem" placeholder="Escreva aqui a sua mensagem ..." ></textarea>
                       </div>
                     </div>
                   </div>

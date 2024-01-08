@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="../assets/img/neo.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-      Now UI Dashboard by Creative Tim
+      NEOapp
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
@@ -33,7 +33,7 @@
             <li>
               <a href="./dashboard.php">
                 <i class="now-ui-icons design_app"></i>
-                <p>Dashboard</p>
+                <p>Ocorrências</p>
               </a>
             </li>
             <li>
@@ -95,13 +95,13 @@
                 <div class="card-body">
                   <table class="table">
                     <thead class=" text-primary">                     
-                      <th scope="col">Nome licença</th>
-                      <th scope="col">Id</th>
-                      <th scope="col">Condutor</th>
+                      <th scope="col">Nome </th>
+                      <th scope="col">Nº</th>
+                      <th scope="col">Motorista</th>
                       <th scope="col">Telemóvel</th>
                       <th scope="col">Validade</th>
                       <th scope="col">Entidade</th>
-                      <th scope="col">Valor a pagar</th>                                      
+                      <th scope="col">Valor</th>                                      
                     </thead>
  
                     <tbody>
@@ -140,13 +140,13 @@
                 <div class="card-body">
                   <table class="table">
                     <thead class=" text-primary">                     
-                      <th scope="col">Nome licença</th>
-                      <th scope="col">Id</th>
-                      <th scope="col">Condutor</th>
+                    <th scope="col">Nome </th>
+                      <th scope="col">Nº</th>
+                      <th scope="col">Motorista</th>
                       <th scope="col">Telemóvel</th>
                       <th scope="col">Validade</th>
                       <th scope="col">Entidade</th>
-                      <th scope="col">Valor a pagar</th>                                   
+                      <th scope="col">Valor</th>                                      
                     </thead>
  
                     <tbody>

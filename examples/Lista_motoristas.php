@@ -46,7 +46,7 @@
           <li>
             <a href="./dashboard.php">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <p>Ocorrências</p>
             </a>
           </li>
           <li>
@@ -121,13 +121,13 @@
                   <table class="table">
                     <thead class=" text-primary">
 
-                      <th scope="col">id condutor</th>
+                      <th scope="col">Nº</th>
                       <th scope="col">Telemóvel</th>
-                      <th scope="col">Password da app do condutor</th>
+                      <th scope="col">Senha</th>
                       <th scope="col">Nome</th>
-                      <th scope="col">Email do condutor</th>
-                      <th scope="col">id da licença do condutor</th>
-                      <th scope="col">id da licença da abilitação do condutor</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Carta</th>
+                      <th scope="col">CAM</th>
                       <th scope="col">Editar</th>
                       <th scope="col">Eliminar</th>
                     </thead>
@@ -140,7 +140,11 @@
                           <tr>
                             <th scope="row"><?php echo $row ['id_busdriver']; ?></th>
                             <td><?php echo $row['phone_busdriver']; ?></td>
-                            <td><input type="password" value="<?php echo $row['password_app_busdriver']; ?>" disabled></td>
+                            
+
+                            <td><?php echo str_repeat('*', strlen($row['password_app_busdriver']));?></td>
+
+                            <!--<td><input type="password" value="" disabled></td>-->
                             <td><?php echo $row['name_busdriver']; ?></td>
                             <td><?php echo $row['email_busdriver']; ?></td>
                             <td><?php echo $row['busdriver_license_id']; ?></td>

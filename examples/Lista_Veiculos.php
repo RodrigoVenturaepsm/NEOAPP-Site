@@ -2,8 +2,16 @@
   include "ligaBD.php";
   $liga1 = liga1();
   
-  $sql = "SELECT * FROM vehicles";
+  $sql = "SELECT * 
+  FROM vehicles 
+  JOIN european_vehicles_license ON  european_vehicles_license.id_european_vehicle_license = vehicles.european_vehicle_license_id
+  JOIN kid_vehicles_license ON  kid_vehicles_license.id_kid_vehicle_license = vehicles.kid_vehicle_license_id
+  JOIN vehicles_certificate ON vehicles_certificate.id_vehicle_certificate = vehicles.vehicle_certificate_id
+  JOIN vehicles_inspection ON  vehicles_inspection.id_vehicle_inspection = vehicles.vehicle_inspection_id
+  JOIN tacographs_vehicle ON  tacographs_vehicle.id_tacograph_vehicle = vehicles.tacograph_vehicle_id;";
 
+
+  
   $resultado = mysqli_query($liga1, $sql);
   if(mysqli_num_rows($resultado)>0){
    
@@ -20,7 +28,7 @@
   <link rel="icon" type="image/png" href="../assets/img/neo.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Now UI Dashboard by Creative Tim
+    NEOapp
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -46,7 +54,7 @@
           <li>
             <a href="./dashboard.php">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <p>Ocorrências</p>
             </a>
           </li>
           <li>
@@ -104,23 +112,19 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> Simple Table</h4>
+               
               </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
-                      <th scope="col">id</th>
-                      <th scope="col">id Matricula</th>
-                      <th scope="col">id Categoria</th>
-                      <th scope="col">id inspeção veículo</th>
-
-                      <th scope="col">id certificado veículo</th>
-                      <th scope="col">id licença europeia</th>
-                      <th scope="col">id licença do veículo para crianças</th>
-                      <th scope="col">id catógrafo</th>
-                      <th scope="col">id combústivel do veículo</th>
-                      <th scope="col">id adblue do veículo</th>
+                      <th scope="col">Nº</th>
+                      <th scope="col">Inspeção</th>
+                      <th scope="col">Certificado</th>
+                      <th scope="col">Licença europeia</th>
+                      <th scope="col">Licença crianças</th>
+                      <th scope="col">Tacógrafo</th>
+                  
                     </thead>
                     <tbody>
                       <?php
@@ -130,16 +134,12 @@
                       ?>
                           <tr>
                             <th scope="row"><?php echo $row['id_vehicle']; ?></th>
-                            <td><?php echo $row['vehicle_plate_id']; ?></td>
-                            <td><?php echo $row['imt_category_id']; ?></td>
-                            <td><?php echo $row['vehicle_inspection_id']; ?></td>
-
-                            <td><?php echo $row['vehicle_certificate_id']; ?></td>
-                            <td><?php echo $row['european_vehicle_license_id']; ?></td>
-                            <td><?php echo $row['kid_vehicle_license_id']; ?></td>
-                            <td><?php echo $row['tacograph_vehicle_id']; ?></td>
-                            <td><?php echo $row['vehicle_fuel_id']; ?></td>
-                            <td><?php echo $row['vehicle_adblue_id']; ?></td>
+                            <td><?php echo $row['valid_vehicle_inspection']; ?></td>
+                            <td><?php echo $row['valid_vehicle_certificate']; ?></td>
+                            <td><?php echo $row['valid_european_vehicle_license']; ?></td>
+                            <td><?php echo $row['valid_kid_vehicle_license']; ?></td>
+                            <td><?php echo $row['valid_tacograph_vehicle']; ?></td>
+                  
                           </tr>
                       <?php
                         }
@@ -160,8 +160,6 @@
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chart JS -->
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->

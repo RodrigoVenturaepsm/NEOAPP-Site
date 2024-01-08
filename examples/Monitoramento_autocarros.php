@@ -47,7 +47,7 @@ if (mysqli_num_rows($resultado1) > 0) {
                             <li>
                                 <a href="./dashboard.php">
                                     <i class="now-ui-icons design_app"></i>
-                                    <p>Dashboard</p>
+                                    <p>Ocorrências</p>
                                 </a>
                             </li>
                             <li>
@@ -100,9 +100,7 @@ if (mysqli_num_rows($resultado1) > 0) {
                     <nav class="navbar navbar-expand-lg navbar-transparent bg-primary navbar-absolute">
                         <div class="container-fluid">
                             <div class="navbar-wrapper-center mx-auto text-center">
-                                <a class="navbar-brand" href="#pablo">
-                                    <h4>Monitoramento de autocarros</h4>
-                                </a>
+                                
                             </div>
                         </div>
                     </nav>

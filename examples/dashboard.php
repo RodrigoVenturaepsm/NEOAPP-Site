@@ -43,7 +43,7 @@ if (mysqli_num_rows($resultado) > 0) {
           <li class="active ">
             <a href="./dashboard.php">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <p>Ocorrências</p>
             </a>
           </li>
           <li>
@@ -123,7 +123,7 @@ if (mysqli_num_rows($resultado) > 0) {
                 ?>
                   <div class="alert <?php echo $alertClass; ?> alert-with-icon d-flex justify-content-between align-items-center" data-notify="container">
                     <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
-                    <span data-notify="message"><?php echo $message; ?></span>
+                    <span data-notify="message" style="901d22"><?php echo $message; ?></span>
                     <div class="d-flex align-items-center">
                       <form class="mark-as-read-form" method="post" action="marcar_como_lida.php">
                         <input type="hidden" name="messageId" value="<?php echo $messageId; ?>">

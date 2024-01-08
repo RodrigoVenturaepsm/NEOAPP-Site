@@ -40,7 +40,7 @@
           <li>
             <a href="./dashboard.php">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <p>Ocorrências</p>
             </a>
           </li>
           <li>
@@ -154,7 +154,7 @@
       }
 
       // Inicializa o mapa
-      map = L.map('map').setView([-34.397, 150.644], 10);
+      map = L.map('map').setView([39.238155, -8.686417],13);
 
       // Adiciona camada de mapa do OpenStreetMap
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -176,11 +176,10 @@
         var end = document.getElementById('end').value;
 
         routingControl.setWaypoints([
-          L.latLng(-34.397, 150.644), // Localização inicial
-          L.latLng(-34.407, 150.654)  // Destino
+          
         ]);
 
-        map.setView(L.latLng(-34.397, 150.644), 10); // Ajusta o zoom e a visualização do mapa
+        
       });
     }
 

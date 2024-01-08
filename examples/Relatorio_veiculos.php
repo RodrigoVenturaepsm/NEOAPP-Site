@@ -35,7 +35,7 @@
             <li>
               <a href="./dashboard.php">
                 <i class="now-ui-icons design_app"></i>
-                <p>Dashboard</p>
+                <p>Ocorrências</p>
               </a>
             </li>
 
@@ -105,13 +105,13 @@
                 <div class="card-body">
                   <table class="table">
                     <thead class=" text-primary">                     
-                      <th scope="col">Nome do certificado</th>
-                      <th scope="col">Id do certificado</th>
-                      <th scope="col">Id do Veículo</th>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Nº</th>
+                      <th scope="col">Viatura</th>
                       <th scope="col">Matricula</th>
                       <th scope="col">Validade</th>
                       <th scope="col">Entidade</th>
-                      <th scope="col">Valor a pagar</th>                                   
+                      <th scope="col">Valor</th>                                   
                     </thead>
                                               
                     <tbody>
@@ -129,7 +129,7 @@
                         <td><?php echo $row1['plate_vehicle']; ?></td>
                         <td><?php echo $row1['valid']; ?></td>
                         <td><?php echo $row1['entity']; ?></td>
-                        <td><?php echo $row1['value_pay']; ?></td>
+                        <td><?php echo $row1['value_pay']; ?>$</td>
                       </tr>
                       
                       <?php
@@ -150,13 +150,13 @@
                 <div class="card-body">
                   <table class="table">
                     <thead class=" text-primary">
-                      <th scope="col">Nome do certificado</th>
-                      <th scope="col">Id do certificado</th>
-                      <th scope="col">Id do Veículo</th>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Nº</th>
+                      <th scope="col">Viatura</th>
                       <th scope="col">Matricula</th>
                       <th scope="col">Validade</th>
                       <th scope="col">Entidade</th>
-                      <th scope="col">Valor a pagar</th>                  
+                      <th scope="col">Valor</th>                   
                     </thead>
                                       
                     <tbody>
