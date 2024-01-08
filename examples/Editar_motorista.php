@@ -156,7 +156,7 @@ if (isset($_GET['id'])) {
         return confirm("Tem certeza que deseja cancelar? Todas as alterações não salvas serão perdidas.");
     }
     
-</script>
+  </script>
 
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
