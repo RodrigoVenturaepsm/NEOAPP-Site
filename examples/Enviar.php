@@ -102,6 +102,20 @@
                       <input type="email" class="form-control" name="Email" placeholder="Email">
                     </div>
                   </div>
+
+                  <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                      <label>Com cópia</label>
+                      <input type="email" class="form-control" name="Emailcc" placeholder="Email">
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                      <label>B c c</label>
+                      <input type="email" class="form-control" name="Emailbcc" placeholder="Email">
+                    </div>
+                  </div>
                         
                     
                 </div>  

@@ -45,6 +45,18 @@
 
         // Fecha a conexão com o banco de dados
         $conn->close();
+        $month_1 = $results['month_1'];
+        $month_2 = $results['month_2'];
+        $month_3 = $results['month_3'];
+        $month_4 = $results['month_4'];
+        $month_5 = $results['month_5'];
+        $month_6 = $results['month_6'];
+        $month_7 = $results['month_7'];
+        $month_8 = $results['month_8'];
+        $month_9 = $results['month_9'];
+        $month_10 = $results['month_10'];
+        $month_11 = $results['month_11'];
+        $month_12 = $results['month_12'];
     } else {
         echo "Erro na execução das consultas: " . $conn->error;
     }
@@ -52,25 +64,19 @@
 
     <canvas id="monthlyChart" width="850" height="145"></canvas>
 
-    <style>
-    #monthlyChart {
-        color: white;
-    }
-    #monthlyChart * {
-        color: white;
-    }
-</style>
+ 
 
 <script>
     // Extrai os valores mensais para o gráfico
     let monthlyValues = <?php echo json_encode(array_values($results)); ?>;
 
+    
     // Configuração do gráfico
     let ctx = document.getElementById('monthlyChart').getContext('2d');
     let monthlyChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Mês 1', 'Mês 2', 'Mês 3', 'Mês 4', 'Mês 5', 'Mês 6', 'Mês 7', 'Mês 8', 'Mês 9', 'Mês 10', 'Mês 11', 'Mês 12'],
+            labels: [<?php echo $month_1;?> , <?php echo $month_2;?>, <?php echo $month_3;?>, <?php echo $month_4;?>, <?php echo $month_5;?>, <?php echo $month_6;?>, <?php echo $month_7;?>, <?php echo $month_8;?>, <?php echo $month_9;?>, <?php echo $month_10;?>, <?php echo $month_11;?>, <?php echo $month_12;?>],
             datasets: [{
                 label: 'Valor Acumulado',
                 data: monthlyValues,
@@ -78,6 +84,7 @@
                 borderColor: 'rgba(4, 191, 138, 1)',
                 borderWidth: 1,
             }]
+
         },
         options: {
             scales: {
@@ -90,13 +97,7 @@
                     display: true,
                     position: 'top',
                 },
-                title: {
-                    display: true,
-                    text: 'Título do Gráfico',
-                    font: {
-                        size: 16
-                    }
-                }
+                
             },
             elements: {
                 bar: {

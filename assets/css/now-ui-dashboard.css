@@ -928,6 +928,8 @@ fieldset[disabled] .btn-neutral.active {
   color: #901b22;
 }
 
+
+
 .btn-neutral.btn-danger:hover,
 .btn-neutral.btn-danger:focus,
 .btn-neutral.btn-danger:active,
@@ -2996,7 +2998,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .alert.alert-primary {
-  background-color: #fa764b;
+  background-color: #b4b4b4 !important;
 }
 
 .alert i.fa,

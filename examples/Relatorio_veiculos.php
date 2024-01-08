@@ -119,8 +119,15 @@
                         include "LigacaoProcedures/ligaProcedure_mes_corrente.php";
                         $resultados1 = $result->fetch_all(MYSQLI_ASSOC);
 
+                       
+                        //$value_format = number_format($value);
+                        
                         foreach ($resultados1 as $row1) {
                       ?>
+                      
+
+
+
                       
                       <tr>
                         <th scope="row"><?php echo $row1['certificate_name']; ?></th>
@@ -129,7 +136,7 @@
                         <td><?php echo $row1['plate_vehicle']; ?></td>
                         <td><?php echo $row1['valid']; ?></td>
                         <td><?php echo $row1['entity']; ?></td>
-                        <td><?php echo $row1['value_pay']; ?>$</td>
+                        <td><?php echo number_format($row1['value_pay'],2); ?> €</td>
                       </tr>
                       
                       <?php
@@ -173,7 +180,7 @@
                         <td><?php echo $row2['plate_vehicle']; ?></td>
                         <td><?php echo $row2['valid']; ?></td>
                         <td><?php echo $row2['entity']; ?></td>
-                        <td><?php echo $row2['value_pay']; ?></td>
+                        <td><?php echo number_format($row2['value_pay'],2); ?> €</td>
                       </tr>
                       <?php
                         }

@@ -2,7 +2,10 @@
   include "ligaBD.php";
   $liga = liga1();
   
-  $sql = "SELECT * FROM busdrivers ORDER BY id_busdriver" ;
+  $sql = "SELECT * 
+  FROM busdrivers
+  JOIN busdrivers_license ON busdrivers_license.id_busdriver_license = busdrivers.busdriver_license_id
+  JOIN busdrivers_license_ability ON busdrivers_license_ability.id_busdriver_license_ability = busdrivers.busdriver_license_ability_id;" ;
 
   $resultado = mysqli_query($liga, $sql);
   if(mysqli_num_rows($resultado)>0){
@@ -147,8 +150,8 @@
                             <!--<td><input type="password" value="" disabled></td>-->
                             <td><?php echo $row['name_busdriver']; ?></td>
                             <td><?php echo $row['email_busdriver']; ?></td>
-                            <td><?php echo $row['busdriver_license_id']; ?></td>
-                            <td><?php echo $row['busdriver_license_ability_id']; ?></td>
+                            <td><?php echo $row['valid_busdriver_license']; ?></td>
+                            <td><?php echo $row['valid_busdriver_license_ability']; ?></td>
                             <td><a href="Editar_motorista.php?id=<?php echo $row['id_busdriver']; ?>" class="btn btn-warning">Editar</a></td>
                             <td><button type="button" class="btn btn-danger" onclick="deleteBusdriver(<?php echo $row['id_busdriver']; ?>)">Eliminar</button></td>
                             

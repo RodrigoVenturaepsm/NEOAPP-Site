@@ -2,7 +2,7 @@
 include "ligaBD.php";
 $liga1 = liga1();
 
-$sql = "SELECT * FROM messages";
+$sql = "SELECT * FROM messages ORDER BY id_message DESC";
 
 $resultado = mysqli_query($liga1, $sql);
 if (mysqli_num_rows($resultado) > 0) {
@@ -119,11 +119,12 @@ if (mysqli_num_rows($resultado) > 0) {
                   $messageId = $row['id_message'];
                   $message = $row['message'];
                   $status = $row['message_status'];
-                  $alertClass = $status ? 'alert-secondary' : 'alert-warning';
+                  $alertClass = $status ? 'alert-primary' : 'alert-warning';
                 ?>
                   <div class="alert <?php echo $alertClass; ?> alert-with-icon d-flex justify-content-between align-items-center" data-notify="container">
                     <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
                     <span data-notify="message" style="901d22"><?php echo $message; ?></span>
+                    
                     <div class="d-flex align-items-center">
                       <form class="mark-as-read-form" method="post" action="marcar_como_lida.php">
                         <input type="hidden" name="messageId" value="<?php echo $messageId; ?>">
@@ -148,16 +149,14 @@ if (mysqli_num_rows($resultado) > 0) {
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!-- Google Maps Plugin -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  
   <!-- Chart JS -->
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!-- Notifications Plugin -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script>
-  <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
-  <script src="../assets/demo/demo.js"></script>
+  
   <script>
     $(document).ready(function () {
       $(".mark-as-read-button").click(function () {

@@ -41,7 +41,8 @@
 
         $mail->setFrom("movimento.3t@gmail.com", "3T Movimento");
         $mail->addAddress($_POST["Email"]); 
-        
+        $mail->addCC($_POST["Emailcc"]);
+        $mail->addBCC($_POST["Emailbcc"]);
         $mail->isHTML(true);
 
 

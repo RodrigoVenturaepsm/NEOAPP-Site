@@ -94,7 +94,7 @@
         <div class="container-fluid">
           <div class="navbar-wrapper">
             
-            <a class="navbar-brand" href="#pablo">Mapa</a>
+            
           </div>
           
           
@@ -106,11 +106,9 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card ">
-              <div class="card-header ">
-                Leaflet Maps
-              </div>
+              
               <div class="card-body ">
-                <h1>Rota Leaflet Maps</h1>
+                <h1>Mapa</h1>
 
                 <!-- Campos para a localização e destino -->
                 <label for="start">Localização:</label>
@@ -164,8 +162,7 @@
       // Adiciona controle de rota
       routingControl = L.Routing.control({
         waypoints: [
-          L.latLng(-34.397, 150.644), // Localização inicial
-          L.latLng(-34.407, 150.654)  // Destino
+          
         ],
         routeWhileDragging: true
       }).addTo(map);
