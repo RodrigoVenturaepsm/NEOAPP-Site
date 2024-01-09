@@ -62,7 +62,7 @@
     }
     ?>
 
-    <canvas id="monthlyChart" width="850" height="145"></canvas>
+    <canvas id="monthlyChart" width="1100" height="145"></canvas>
 
  
 
