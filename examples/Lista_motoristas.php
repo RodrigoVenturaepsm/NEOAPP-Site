@@ -143,7 +143,7 @@
                           <tr>
                             <th scope="row" class="text-center"><?php echo $row ['id_busdriver']; ?></th>
                             <td class="text-center"><?php echo $row['phone_busdriver']; ?></td>
-                            <td><?php echo str_repeat('*', strlen($row['password_app_busdriver']));?></td>
+                            <td class="text-center"><?php echo str_repeat('*', strlen($row['password_app_busdriver']));?></td>
                             <td class="text-center"><?php echo $row['name_busdriver']; ?></td>
                             <td class="text-center"><?php echo $row['email_busdriver']; ?></td>
                             <td class="text-center"><?php echo $row['valid_busdriver_license']; ?></td>
