@@ -96,10 +96,10 @@
                   <table class="table">
                     <thead class=" text-primary">                     
                       <th scope="col">Nome </th>
-                      <th scope="col">Nº</th>
-                      <th scope="col">Motorista</th>
-                      <th scope="col">Telemóvel</th>
-                      <th scope="col">Validade</th>
+                      <th scope="col" class="text-center">Nº</th>
+                      <th scope="col" class="text-center">Motorista</th>
+                      <th scope="col" class="text-center">Telemóvel</th>
+                      <th scope="col" class="text-center">Validade</th>
                       <th scope="col">Entidade</th>
                       <th scope="col">Valor</th>                                      
                     </thead>
@@ -141,10 +141,10 @@
                   <table class="table">
                     <thead class=" text-primary">                     
                     <th scope="col">Nome </th>
-                      <th scope="col">Nº</th>
-                      <th scope="col">Motorista</th>
-                      <th scope="col">Telemóvel</th>
-                      <th scope="col">Validade</th>
+                      <th scope="col" class="text-center">Nº</th>
+                      <th scope="col" class="text-center">Motorista</th>
+                      <th scope="col" class="text-center">Telemóvel</th>
+                      <th scope="col" class="text-center">Validade</th>
                       <th scope="col">Entidade</th>
                       <th scope="col">Valor</th>                                      
                     </thead>
